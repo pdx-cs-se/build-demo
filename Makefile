@@ -5,7 +5,7 @@ CPP = g++
 CPPFLAGS = -Wall -g
 
 hello: hello.cpp
-	$(CPP) $(CPPFLAGS) -o hello hello.cpp -lncurses
+	$(CPP) $(CPPFLAGS) -o hello hello.cpp
 
 clean:
 	-rm -f hello
