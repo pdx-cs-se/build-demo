@@ -3,9 +3,10 @@
 
 CPP = g++
 CPPFLAGS = -Wall -g
+LIBS = -lncurses
 
 hello: hello.cpp
-	$(CPP) $(CPPFLAGS) -o hello hello.cpp -lncurses
+	$(CPP) $(CPPFLAGS) -o hello hello.cpp $(LIBS)
 
 clean:
 	-rm -f hello

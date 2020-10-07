@@ -3,9 +3,15 @@
 
 #include <iostream>
 
+#include <ncurses.h>
+
 using namespace std;
 
 int main() {
-  cout << "hello world" << endl;
+  initscr();
+  printw("hello world", 1, 1);
+  refresh();
+  getchar();
+  endwin();
   return 0;
 }
