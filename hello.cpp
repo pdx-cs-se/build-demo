@@ -9,7 +9,7 @@ using namespace std;
 
 int main() {
   initscr();
-  printw("hello world", 1, 1);
+  mvprintw(1, 1, "hello world");
   refresh();
   getchar();
   endwin();
